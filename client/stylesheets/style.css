@@ -1,96 +1,90 @@
 /* CSS declarations go here */
-.grid-blok, .main, .post, .comments li, .comment-form {
-  background: :#fff;
+.grid-block, .main, .post, .comments li, .comment-form {
+  background: #fff;
   -webkit-border-radius: 3px;
-  -moz-border-radius:3px;
+  -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
   padding: 10px;
   margin-bottom: 10px;
-  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.15):
-  -moz-box-shadow:0 1px 1px rgba(0,0,0,0.15):
-  box-shadow:0 1px 1px rgba(0,0,0,0.15): }
-
-  body{
-    background: #eee;
-    color: #666666; }
-
-  .navbar {
-    margin-bottom: 10px }
-    /* line 32, ../sass/style.scss */
-    .navbar .navbar-inner {
-      -webkit-border-radius: 0 0 3px 3px;
-      -moz-border-radius: 0 0 3px 3px;
-      -ms-border-radius: 0 0 3px 3px;
-      -o-border-radius: 0 0 3px 3px;
-      border-radius: 0 0 3px 3px; }
-
-  #spinner {
-    height: 300px; }
-
-  .post {
-    /* For modern browsers */
-    /* For IE 6/7 (trigger hasLayout) */
-    *zoom: 1;
-    position: relative;
-    opacity: 1; }
-    .post:before, .post:after {
-      content: "";
-      display: table; }
-    .post:after {
-      clear: both; }
-    .post.invisible {
-      opacity: 0; }
-    .post.instant {
-      -webkit-transition: none;
-      -moz-transition: none;
-      -o-transition: none;
-      transition: none; }
-    .post.animate{
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+body {
+  background: #eee;
+  color: #666666; }
+.navbar {
+  margin-bottom: 10px; }
+  /* line 32, ../sass/style.scss */
+  .navbar .navbar-inner {
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    -ms-border-radius: 0px 0px 3px 3px;
+    -o-border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px; }
+#spinner {
+  height: 300px; }
+.post {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+  position: relative;
+  opacity: 1; }
+  .post:before, .post:after {
+    content: "";
+    display: table; }
+  .post:after {
+    clear: both; }
+  .post.invisible {
+    opacity: 0; }
+  .post.instant {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none; }
+  .post.animate{
       -webkit-transition: all 300ms 0ms;
       -webkit-transition-delay: ease-in;
       -moz-transition: all 300ms 0ms ease-in;
       -o-transition: all 300ms 0ms ease-in;
-      -transition: all 300ms 0ms ease-in; }
-    .post .upvote {
-        display: block;
-        margin: 7px 12px 0 0;
-        float: left; }
-    .post .post-content {
-        float: left; }
-        .post .post-content h3 {
-          margin: 0;
-          line-height: 1.4;
-          font-size: 18px; }
-          .post .post-content h3 a {
-            display: inline-block;
-            margin-right: 5px; }
-          .post .post-content h3 span {
-            font-weight: normal;
-            font-size: 14px;
-            display: inline-block;
-            color: #aaaaaa; }
-        .post .post-content p {
-          margin: 0; }
-  .post .discuss {
+      transition: all 300ms 0ms ease-in; }
+  .post .upvote {
       display: block;
-      float: right;
-      margin-top: 7px; }
+      margin: 7px 12px 0 0;
+      float: left; }
+  .post .post-content {
+    float: left; }
+    .post .post-content h3 {
+      margin: 0;
+      line-height: 1.4;
+      font-size: 18px; }
+      .post .post-content h3 a {
+        display: inline-block;
+        margin-right: 5px; }
+      .post .post-content h3 span {
+        font-weight: normal;
+        font-size: 14px;
+        display: inline-block;
+        color: #aaaaaa; }
+    .post .post-content p {
+        margin: 0; }
+  .post .discuss {
+    display: block;
+    float: right;
+    margin-top: 7px; }
 
 .comments {
-    list-style-type: none;
+  list-style-type: none;
+  margin: 0; }
+  .comments li h4 {
+    font-size: 16px;
     margin: 0; }
-    .comments li h4 {
-      font-size: 16px;
-      margin: 0; }
-      .comments li h4 .date {
-        font-size: 12px;
-        font-weight: normal; }
-      .comments li h4 a {
-        font-size: 12px; }
-    .comments li p:last-child {
-      margin-bottom: 0; }
+    .comments li h4 .date {
+      font-size: 12px;
+      font-weight: normal; }
+    .comments li h4 a {
+      font-size: 12px; }
+  .comments li p:last-child {
+    margin-bottom: 0; }
 
 .dropdown-menu span {
   display: block;
@@ -99,6 +93,7 @@
   line-height: 20px;
   color: #bbb;
   white-space: nowrap; }
+
 .load-more {
   display: block;
   -webkit-border-radius: 3px;
@@ -119,7 +114,6 @@
   position: relative;
   height: 100px;
 }
-
 .jumbotron{
   text-align: center;
 }
@@ -140,6 +134,7 @@
   90% {opacity: 1;}
   100% {opacity: 0;}
 }
+
 .errors{
   position: fixed;
   z-index: 10000;
@@ -148,7 +143,9 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  pointer-events: none; }
+  pointer-events: none;
+}
+
 .alert {
           animation: fadeOut 2700ms ease-in 0s 1 forwards;
   -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
@@ -157,5 +154,5 @@
   float: right;
   clear: both;
   margin-bottom: 5px;
-  pointer-events:auto;
+  pointer-events: auto;
 }
